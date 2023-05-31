@@ -1,0 +1,226 @@
+body{
+     border: 1px solid red;
+    display: grid;
+    grid-template-columns:  1fr ;
+    grid-template-rows: auto auto;
+}
+article{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr ; 
+    grid-template-rows: auto auto auto;
+}
+
+h1{
+    color: purple;
+}
+p{
+    font-size: 20px;
+}
+#articlediv{
+grid-row: 1;
+}
+#fotodiv{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+  
+}
+#img1{
+    width: 500px;
+    height: 250px;
+  
+}
+
+#form1{
+    grid-column: 1;
+    grid-row: 2;
+}
+#form2{
+    grid-column: 2;
+    grid-row: 2;
+}
+label {
+    display: inline-flex;
+    width: 100px;
+    text-align: right;
+    margin-right: 22px;
+  }
+
+  input[type="text"], input[type="date"] {
+    display: inline-block;
+    width: 50%;
+    padding: 5px;
+
+  }
+  .container {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    display: flex;
+
+  }
+     #Antwoord {
+    width: 100%;
+  }
+  #antwoord1{
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    justify-self: start;
+    width: 50%;
+    height: 50%;
+  }
+  #verzenden{
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    justify-self: start;
+    width: 100%;
+    margin-left: 120px;
+    margin-top: 40px;
+  }
+  #button1{
+    width: 46%;
+  }
+  
+  @media screen and (max-width:600px) and (orientation: portrait) {
+     body{
+      display: grid;
+      grid-template-columns:  1fr;
+      grid-template-rows:  1fr;
+      border: 1px solid red;
+     }
+    article{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto auto;
+        
+    }
+    #form1{
+        grid-column: 1 / span 2 ;
+        grid-row: 3;
+        width: 100%;
+    }
+    #form2{
+        grid-column:1 / span 2 ;
+        grid-row: 4;
+    }
+    #fotodiv{
+      grid-column: 1;
+      grid-row: 2;
+      justify-self:start;
+    }
+    .container {
+        grid-column: 1 / span 2;
+        grid-row: 5;
+       
+    
+      }
+         #Antwoord {
+        width: 100%;
+      }
+      #antwoord1{
+        width: 90%;
+        height: 80%;
+      }
+      #verzenden{
+        grid-column: 1 / span 2;
+        grid-row: 6;
+        justify-self: start;
+        margin-right: 115px;
+        margin-top: 1px;
+      }
+      #button1{
+        width: 400px;
+      }
+      #img1{
+        width: 500px;
+        height: 250px;
+      
+    }
+    label {
+      display: block;
+      width: 100px;
+      text-align: left;
+      margin-right: 10px;
+    }
+  
+    input[type="text"], input[type="date"] {
+      display: block;
+      width: 500px;
+      padding: 5px;
+      margin-bottom: 5px; 
+    }
+}
+@media screen and (max-width:1024px) and (orientation: landscape) {
+  body{
+   display: grid;
+   grid-template-columns:  1fr;
+   grid-template-rows:  1fr;
+   border: 1px solid red;
+  }
+ article{
+     display: grid;
+     grid-template-columns: 1fr 1fr; 
+     grid-template-rows: auto auto auto auto auto;
+     
+ }
+ #form1{
+     grid-column: 1 / span 2 ;
+     grid-row: 3;
+     width: 100%;
+ }
+ #form2{
+     grid-column:1 / span 2 ;
+     grid-row: 4;
+ }
+ #fotodiv{
+   grid-column: 2;
+   grid-row: 1;
+   justify-self:start;
+ }
+ .container {
+     grid-column: 1 / span 2;
+     grid-row: 5;
+    
+ 
+   }
+      #Antwoord {
+     width: 100%;
+   }
+   #antwoord1{
+     width: 82%;
+     height: 80%;
+   }
+   #verzenden{
+     grid-column: 1 / span 2;
+     grid-row: 6;
+     justify-self: start;
+     margin-right: 115px;
+     margin-top: 1px;
+
+   }
+   #button1{
+     width: 500px;
+     
+   }
+   #img1{
+     width: 500px;
+     height: 250px;
+   
+ }
+ label {
+   display: inline-flex;
+   width: 100px;
+   text-align: right;
+   margin-right: 10px;
+ }
+
+ input[type="text"], input[type="date"] {
+   display: inline-block;
+   width: 700px;
+   padding: 5px;
+   margin-bottom: 5px; 
+ }
+}
+    
+  
+  

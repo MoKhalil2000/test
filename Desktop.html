@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GUI Eindeopdracht</title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        
+    </body>
+    <header>
+        <h1>Deelname prijsvraag - Commander Keen: Goodbye Galaxy!</h1>
+    </header>
+    <article>
+        <div id="articlediv">
+            <p>Onlangs is Commander Keen: Goodbye Galaxy! verschenen en dus hebben wij, in samenwerking met id Software een toffe prijsvraag voor jullie. Vanaf nu maak je kans op een van de vier exemplaren van de game.Vul onderstaande gegevens in en geef antwoord op de volgende vraag: <br></p>
+             <h1> Tegen welk buitenaards ras neemt Commander Keen het op in Goodby Galaxy!?<br></h1>
+            <p > Wie weet maak jij kans op een van de vier Limited Edition uitvoeringen van de game Commander Keen: Goodbye Galaxy! <br> </p>
+        </div>
+        <div id="fotodiv">
+            <img id="img1" src="..//Eindeopdracht/Benodigde bestanden/commanderkeen.jpg" alt="commanderkeen">
+        </div>
+        <div id="form1">
+            <form action="#" method="POST">
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam" required><br><br>
+                <label for="Adres">Adres:</label>
+                <input type="text" id="Adres" name="Adres" required><br><br>
+                <label for="postcode">Postcode:</label>
+                <input type="text" id="postcode" name="postcode" required><br><br>
+                <label for="geslacht">Geslacht:</label>
+                <input type="radio" id="man" name="geslacht" value="man" required>
+                <label for="man">Man</label>
+                <input type="radio" id="vrouw" name="geslacht" value="vrouw" required>
+                <label for="vrouw">Vrouw</label>
+                <input type="radio" id="overig" name="geslacht" value="overig" required>
+                <label for="overig">Overig</label>
+            </form>
+        </div>
+        <div class="container">
+            <div id="antwoord">
+              <label for="antwoord">Antwoord:</label>
+            </div>
+            <div id="Antwoord">
+              <textarea id="antwoord1" name="antwoord" required></textarea>
+            </div>
+          </div>
+        <div id="form2">
+            <form action="#" method="POST">
+                <label for="achternaam">Achternaam:</label>
+                <input type="text" id="achternaam" name="achternaam" required><br><br>
+                <label for="huisnummer">Huisnummer:</label>
+                <input type="text" id="huisnummer" name="huisnummer" required><br><br>
+                <label for="stad">Stad:</label>
+                <input type="text" id="stad" name="stad"><br><br>
+                <label for="geboortedatum">Geboortedatum:</label>
+                <input type="date" id="geboortedatum" name="geboortedatum" required><br><br>
+              </form>
+        </div>
+        <div id="verzenden">
+            <button id="button1" >Verzenden</button>
+          </div>
+
+    </article>
+</html>
